@@ -1,35 +1,3 @@
-// const express = require('express');
-// const router = express.Router();
-// const Expense = require('../models/Expense');
-
-// // Get all expenses
-// router.get('/', async (req, res) => {
-//     const expenses = await Expense.find ();
-//     res.json(expenses);
-// });
-
-// // Create a new expense
-// router.post('/', async (req, res) => {
-//     try {
-//         const newExpense = new Expense({
-//             description: req.body.description,
-//             amount: req.body.amount,
-//             date: req.body.date
-//         });
-//         await newExpense.save();
-//         res.status(201).json(newExpense);
-//     } catch (error) {
-//         console.error('Error saving expense:', error);
-//         res.status(500).json({ message: 'Error saving expense' });
-//     }
-// });
-
-// // Delete an expense
-
-// module.exports = router;
-
-
-
 const express = require('express');
 const router = express.Router();
 const Expense = require('../models/Expense');
@@ -92,4 +60,3 @@ router.put('/:id', async (req, res) => {
 
 
 module.exports = router;
-
