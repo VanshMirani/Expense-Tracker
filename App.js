@@ -30,12 +30,3 @@ const App = () => {
 };
 
 export default App;
-// const App = () => {
-//     return (
-//         <div className="App">
-//             <ExpenseList />
-//         </div>
-//     );
-// };
-
-// export default App;
